@@ -1,12 +1,13 @@
 import React from 'react'
+import '../index.css';
 
 const SearchBar = () => {
   return (
     <div className="search-bar">
       <form className="search-form">
         <i className="fa fa-search"></i>
-        <input type="text" id="img-search" className="img-search" />
-        <input type="submit" id="img-search-btn" className="img-search-btn" />
+        <input type="text" placeHolder="Find Something..." id="img-search" className="search-input" />
+        <input type="submit" id="img-search-btn" className="search-btn" />
       </form>
       <a href="#" className="notification"> 
         <i className="fa fa-bell"></i> 

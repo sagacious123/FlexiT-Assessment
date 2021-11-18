@@ -1,4 +1,5 @@
 import React from 'react'
+import '../index.css';
 
 const ImageGrid = () => {
   return (
@@ -20,7 +21,7 @@ const ImageGrid = () => {
           <p> <i className="fa fa-location"></i> <span>New York</span> </p>
           <div>
             <button><i className="fa fa-heart"></i></button>
-            <button><i className="fa fa-heart"></i></button>
+            <button><i className="fa fa-thumbs-down"></i></button>
           </div>
         </div>
       </a>

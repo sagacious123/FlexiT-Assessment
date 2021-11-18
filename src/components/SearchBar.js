@@ -1,4 +1,5 @@
 import React from 'react'
+import Notification from './Notification'
 import '../index.css';
 
 const SearchBar = () => {
@@ -10,8 +11,15 @@ const SearchBar = () => {
         <input type="submit" value="Search" id="img-search-btn" className="search-btn" />
       </form>
       <a href="#" className="notification"> 
-        <i className="fa fa-bell"></i> 
-        <span className="notification-num">3</span>
+        <div>
+          <i className="fa fa-bell"></i> 
+          <span className="notification-num">3</span>
+        </div>
+        <div className="notification-list">
+          <Notification />
+          <Notification />
+          <Notification />
+        </div>
       </a>
       <a href="#" className="profile">
         <span className="profile-img-container">

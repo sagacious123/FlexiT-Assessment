@@ -4,7 +4,7 @@ import '../index.css';
 const TopNav = () => {
   return (
     <div className="top-nav">
-      <ul>
+      <ul className="top-nav-list">
           <li className="top-nav-item">
             <a href="#">
               <span>World</span>

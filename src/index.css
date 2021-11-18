@@ -80,7 +80,7 @@ body {
   justify-content: space-between;
 }
 .search-bar .search-form {
-  width: 80%;
+  width: 78%;
   position: relative;
 }
 .search-form i {
@@ -125,6 +125,7 @@ body {
   color: #2700c1;
   position: relative;
   padding: 0 5px;
+  display: inline-block;
 }
 .notification-num {
   font-size: 10px;
@@ -142,6 +143,37 @@ body {
   width: 14px;
   padding: 4px;
 }
+.notification-list {
+  position: absolute;
+  background-color: white;
+  width: 230px;
+  left: -70%;
+}
+.notification-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px;
+  border-top: 1px solid #cccccc4a;
+}
+.notification-img {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+}
+.notification-item .fa-heart {
+  font-size: 13px;
+  color: #6363634a;
+}
+.notification-info h5 {
+  font-size: 11px;
+  margin: 0;
+}
+.notification-info p {
+  font-size: 10px;
+  margin: 0;
+
+}
 .profile {
   display: flex;
   align-items: center;
@@ -152,15 +184,38 @@ body {
   height: 35px;
   width: 35px;
   display: inline-block;
-  overflow: hidden;
+  /* overflow: hidden; */
   border-radius: 50%;
   box-shadow: 0 0 16px #86868652;
+  position: relative;
+}
+.profile-img-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 10px;
+  width: 10px;
+  background-color: #00ec00;
+  border-radius: 50%;
+  border: 1px solid #fbfbfb;
 }
 .profile-img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  border-radius: 50%;
 }
 .profile-name {
   font-size: 14px;
 }
+.profile-name .fa {
+  font-size: 8px;
+}
+.top-nav-list {
+  display: flex;
+}
+.top-nav-item a {
+  display: block;
+  padding: 10px 20px;
+} 

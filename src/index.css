@@ -76,12 +76,14 @@ body {
 }
 .search-bar {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .search-bar .search-form {
-  width: 70%;
+  width: 80%;
   position: relative;
 }
-.search-bar i {
+.search-form i {
   position: absolute;
   left: 28px;
   top: 50%;
@@ -91,22 +93,74 @@ body {
 }
 .search-bar .search-input {
   width: 100%;
-  padding: 17px 10px 17px 66px;
+  padding: 17px 110px 17px 66px;
   background-color: white;
-  border: 1px solid #94949438;
+  border: 1px solid #a2a2a238;
   border-radius: 6px;
   box-shadow: 0 0 16px #c3c3c352;
   outline: none;
+  font-size: 14px;
 }
 .search-bar .search-btn {
   position: absolute;
-  right: 0;
+  right: 12px;
   top: 50%;
   transform: translateY(-50%);
   background-color: #2700c1;
   color: white;
-  padding: 6px 16px;
+  padding: 5px 20px;
+  font-size: 14px;
   border: 2px solid #2700c1;
   border-radius: 4px;
   outline: none;
+  cursor: pointer;
+  transition: .2s ease;
+}
+.search-bar .search-btn:hover {
+  background-color: white;
+  color: #2700c1;
+}
+.notification {
+  font-size: 22px;
+  color: #2700c1;
+  position: relative;
+  padding: 0 5px;
+}
+.notification-num {
+  font-size: 10px;
+  font-weight: 600;
+  color: white;
+  background-color: #ec0000;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 14px;
+  width: 14px;
+  padding: 4px;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+.profile-img-container {
+  height: 35px;
+  width: 35px;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 0 16px #86868652;
+}
+.profile-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.profile-name {
+  font-size: 14px;
 }

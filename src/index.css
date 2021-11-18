@@ -381,19 +381,26 @@ body {
   }
   .main {
     width: 100%;
-    padding-left: 0;
+  }
+  .main .container {
+    padding: 30px 0 20px 0px;
   }
   .toggler {
     position: relative;
     z-index: 9;
     padding: 5px;
+    margin-right: 20px;
+    cursor: pointer;
   }
   .show {
     display: block
   }
   .left {
-    margin-left: 150px;
+    position: relative;
+    left: 150px;
+    top: 20px;
   }
+  
   .top-nav-btn {
     margin-top: 20px;
     padding: 5px 20px;
@@ -423,7 +430,7 @@ body {
     display: block;
   }
 }
-@media (max-width: 750px) {
+@media (max-width: 850px) {
   .img-section .user {
     width: calc((100% / 3) - 1rem);
     
@@ -433,6 +440,13 @@ body {
   .img-section .user {
     width: calc((100% / 2) - 1rem);
     
+  }
+  .search-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .search-bar .search-form {
+    width: 100%;
   }
 }
 @media (max-width: 400px) {

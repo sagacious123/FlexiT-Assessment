@@ -4,6 +4,7 @@ import '../index.css';
 const TopNav = () => {
   return (
     <div className="top-nav">
+      <button className="top-nav-btn">Menu <i className="fa fa-chevron-down"></i></button>
       <ul className="top-nav-list">
           <li className="top-nav-item">
             <a href="#">

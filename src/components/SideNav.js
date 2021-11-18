@@ -1,9 +1,9 @@
 import React from 'react'
 import '../index.css';
 
-const SideNav = () => {
+const SideNav = ({ toggle, setToggle }) => {
   return (
-    <nav className="side-nav">
+    <nav className={toggle ? "side-nav show" : "side-nav"}>
       <div className="nav-container">
         <div className="logo-container">
           <a href="#"><i className="fa fa-cube"></i> bluecube</a>

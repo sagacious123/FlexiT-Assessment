@@ -4,11 +4,14 @@ import SearchBar from './SearchBar'
 import TopNav from './TopNav'
 import ImageGrid from './ImageGrid'
 
-const Main = () => {
+const Main = ({ toggle, setToggle }) => {
   return (
     <main className="main">
       <div className="container">
-        <SearchBar />
+        <SearchBar 
+          toggle={toggle} 
+          setToggle={setToggle}
+        />
         <TopNav />
         <ImageGrid />
       </div>

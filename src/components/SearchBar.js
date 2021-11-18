@@ -2,9 +2,15 @@ import React from 'react'
 import Notification from './Notification'
 import '../index.css';
 
-const SearchBar = () => {
+const SearchBar = ({ toggle, setToggle }) => {
+
+  const toggleNav = () => {
+    setToggle(!toggle);
+  }
+
   return (
     <div className="search-bar">
+      <div className="toggler" onClick={toggleNav} >open</div>
       <form className="search-form">
         <i className="fa fa-search"></i>
         <input type="text" placeHolder="Find Something..." id="img-search" className="search-input" />

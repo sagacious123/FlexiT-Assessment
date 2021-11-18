@@ -10,7 +10,7 @@ const SearchBar = ({ toggle, setToggle }) => {
 
   return (
     <div className="search-bar">
-      <div className="toggler" onClick={toggleNav} >open</div>
+      <div className="toggler" onClick={toggleNav} > <i className={toggle ? "left fa fa-bars" : "fa fa-bars"}></i> </div>
       <form className="search-form">
         <i className="fa fa-search"></i>
         <input type="text" placeHolder="Find Something..." id="img-search" className="search-input" />

@@ -22,7 +22,7 @@ body {
   border-right: 1px solid #cccccc4a;
 }
 .logo-container {
-  margin: 10px 0 30px;
+  margin: 14px 0 30px;
 }
 .logo-container a {
   font-size: 22px;
@@ -249,14 +249,107 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 14px;
+  font-size: 13px;
   background-color: white;
-  border-radius: 8px;
+  border: 1px solid #a2a2a238;
+  border-radius: 6px;
+  box-shadow: 0 0 16px #c3c3c352;
+  margin-top: 22px;
+  overflow: hidden;
 }
 .top-nav-item a {
   display: block;
-  padding: 10px 10px;
+  padding: 12px 0px;
+  width: 100%;
+  text-align: center;
+}
+.top-nav-item a:hover {
+  background-color: #8080802e;
 } 
+.top-nav-item {
+  border-right: 1px solid #a2a2a238;
+  width: calc(100% / 9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top-nav-item span {
+  margin-right: 8px;
+}
+.top-nav-item:last-child {
+  border-right: none;
+}
 .top-nav-item i {
   font-size: 9px;
+}
+.img-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 30px;
+}
+.img-section .user {
+  display: block;
+  width: calc((100% / 5) - 1rem);
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.img-section .user img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+.user-info {
+  position: absolute;
+  bottom: 1rem;
+  color: white;
+  padding-left: 1rem;
+  padding-top: .8rem;
+}
+.user-info h3, .user-info-hover h3 {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.user-info p, .user-info-hover p {
+  font-size: 11px;
+  margin-top: 0;
+}
+.user-info-hover {
+  position: absolute;
+  bottom: 0;
+  background: white;
+  width: 100%;
+  position: absolute;
+  padding: .7rem 1rem 1rem;
+  opacity: 0;
+  transition: .3s ease;
+}
+.user:hover .user-info-hover {
+  opacity: 1;
+}
+.user-info-hover .btn-group {
+  display: flex;
+  gap: .4rem;
+}
+.user-info-hover button {
+  width: 50%;
+  padding: 4px 0;
+  border-radius: 4px;
+  color: white;
+  font-size: 10px;
+  cursor: pointer;
+
+}
+.user-info-hover .like {
+  background-color: #ec0000;
+  border: 1px solid #ec0000;
+}
+.user-info-hover .dislike {
+  background-color: #2700c1;
+  border: 1px solid #2700c1;
 }

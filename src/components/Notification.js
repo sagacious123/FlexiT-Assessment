@@ -1,14 +1,14 @@
 import React from 'react'
 
-const Notification = () => {
+const Notification = ({ h5, p, icon, col }) => {
   return (
     <a href="#" className="notification-item">
       <img src="/user.jpg" className="notification-img" />
       <div className="notification-info">
-        <h5>Michael liked you!</h5>
-        <p>About 20 minutes ago</p>
+        <h5>{`${h5}`}</h5>
+        <p>{`${p}`}</p>
       </div>
-      <i className="fa fa-heart"></i>
+      <i className={`fa ${icon} ${col}`}></i>
     </a>
   )
 }

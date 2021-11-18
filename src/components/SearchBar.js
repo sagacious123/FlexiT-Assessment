@@ -16,9 +16,24 @@ const SearchBar = () => {
           <span className="notification-num">3</span>
         </div>
         <div className="notification-list">
-          <Notification />
-          <Notification />
-          <Notification />
+          <Notification 
+            h5={"Michael liked you!"} 
+            p={"About 20 minutes ago"} 
+            icon={"fa-heart"} 
+            col={"grey"}
+          />
+          <Notification 
+            h5={"Jack liked you!"} 
+            p={"About 40 minutes ago"} 
+            icon={"fa-heart"}
+            col={"red"}
+          />
+          <Notification 
+            h5={"Martin commented on your photo"} 
+            p={"About 56 minutes ago"} 
+            icon={"fa-comment-alt"} 
+            col={"blue"}
+          />
         </div>
       </a>
       <a href="#" className="profile">

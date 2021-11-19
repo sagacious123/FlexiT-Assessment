@@ -14,7 +14,7 @@ const SearchBar = ({ toggle, setToggle,inputValue, setInputValue }) => {
       <div className={toggle ? "hide toggler" : "toggler"} onClick={toggleNavTrue} > <i className="fa fa-bars"></i> </div>
       <form className="search-form">
         <i className="fa fa-search"></i>
-        <input type="text" value={inputValue} onChange={(e) => setInputValue(e.target.value)} placeHolder="Find Something..." id="img-search" className="search-input" />
+        <input type="text" value={inputValue} onChange={(e) => setInputValue(e.target.value)} placeholder="Find Something..." id="img-search" className="search-input" />
         <input type="submit" value="Search" id="img-search-btn" className="search-btn" />
       </form>
       </div>

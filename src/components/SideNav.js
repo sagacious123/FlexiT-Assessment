@@ -34,7 +34,7 @@ const SideNav = ({ toggle, setToggle }) => {
           <ul>
             <li className="side-nav-item">
               <a href="#">
-                <i className="fa fa-bar-chart"></i>
+                <i className="fa fa-chart-bar"></i>
                 <span>Ranking</span>
               </a>
             </li>
@@ -46,7 +46,7 @@ const SideNav = ({ toggle, setToggle }) => {
             </li>
             <li className="side-nav-item">
               <a href="#">
-                <i className="fa fa-party-popper"></i>
+                <i className="fa fa-glass-cheers"></i>
                 <span>Party</span>
               </a>
             </li>

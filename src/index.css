@@ -17,7 +17,7 @@ body {
 }
 .side-nav {
   width: 20%;
-  height: 100vh;
+  height: 100%;
   padding: 30px 30px 30px 0;
   border-right: 1px solid #cccccc4a;
 }
@@ -45,6 +45,12 @@ body {
 .side-nav-item .fa {
   margin-right: 12px;
 }
+.fa-male {
+  margin-right: 1.4rem;
+}
+.fa-users {
+  font-size: 12px;
+}
 .side-nav-item a::before {
   content: "";
   position: absolute;
@@ -64,7 +70,7 @@ body {
   color: #2700c1;
 
 }
-.side-nav-item a.active span {
+.side-nav-item a.active span, .side-nav-item a:hover span {
   color: black;
 
 }
@@ -365,7 +371,7 @@ body {
 }
 .user-info-hover button {
   width: 50%;
-  padding: 4px 0;
+  padding: 8px 0;
   border-radius: 4px;
   color: white;
   font-size: 10px;
@@ -387,10 +393,10 @@ body {
 @media (max-width: 1100px) {
   .side-nav {
     display: none;
-    position: absolute;
+    position: fixed;
     z-index: 8;
     background-color: white;
-    width: 60%;
+    width: 40%;
     left:0;
     padding-left: 20px;
   }
@@ -471,8 +477,14 @@ body {
   .top-nav-btn:hover ~ .top-nav-list {
     display: block;
   }
+  .user-info-hover button {
+    padding: 10px 0;
+  }
 }
 @media (max-width: 600px) {
+  .side-nav {
+    width: 60%;
+  }
   .search-bar {
     flex-direction: column;
     align-items: flex-end;
@@ -480,6 +492,12 @@ body {
   }
   .search-bar .search-form {
     width: 100%;
+  }
+  .search-bar .search-input {
+    padding: 17px 110px 17px 33px;
+  }
+  .search-form i {
+    left: 10px;
   }
   .form-flex {
     width: 100%;
@@ -493,6 +511,9 @@ body {
   .img-section .user {
     width: calc((100% / 2) - 1rem);
     
+  }
+  .side-nav {
+    width: 70%;
   }
   /*.search-bar {
     flex-direction: column;

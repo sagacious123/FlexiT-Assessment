@@ -2,12 +2,19 @@ import React from 'react'
 import '../index.css';
 
 const SideNav = ({ toggle, setToggle }) => {
+  const toggleNavFalse =() => {
+    if(toggle) {
+      setToggle(false)
+    }
+  }
+
   return (
     <nav className={toggle ? "side-nav show" : "side-nav"}>
       <div className="nav-container">
         <div className="logo-container">
           <a href="#"><i className="fa fa-cube"></i> bluecube</a>
         </div>
+        <div className={toggle ? "left toggler" : "toggler"} onClick={toggleNavFalse} > <i className={toggle ? "fa fa-times" : "fa fa-bars"}></i> </div>
         <div className="side-nav-group">
           <ul className="side-nav-list">
             <li className="side-nav-item">
@@ -27,37 +34,37 @@ const SideNav = ({ toggle, setToggle }) => {
           <ul>
             <li className="side-nav-item">
               <a href="#">
-                <i className="fa fa-sticky-note"></i>
+                <i className="fa fa-bar-chart"></i>
                 <span>Ranking</span>
               </a>
             </li>
             <li className="side-nav-item">
               <a href="#">
-                <i className="fa fa-sticky-note"></i>
+                <i className="fa fa-trophy"></i>
                 <span>Challenge</span>
               </a>
             </li>
             <li className="side-nav-item">
               <a href="#">
-                <i className="fa fa-sticky-note"></i>
+                <i className="fa fa-party-popper"></i>
                 <span>Party</span>
               </a>
             </li>
             <li className="side-nav-item">
               <a href="#">
-                <i className="fa fa-sticky-note"></i>
+                <i className="fa fa-link"></i>
                 <span>Connect</span>
               </a>
             </li>
             <li className="side-nav-item">
               <a href="#">
-                <i className="fa fa-sticky-note"></i>
+                <i className="fa fa-male"></i>
                 <span>Parade</span>
               </a>
             </li>
             <li className="side-nav-item">
               <a href="#">
-                <i className="fa fa-sticky-note"></i>
+                <i className="fa fa-users"></i>
                 <span>Group</span>
               </a>
             </li>

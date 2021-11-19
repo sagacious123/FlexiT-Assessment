@@ -4,18 +4,21 @@ import '../index.css';
 
 const SearchBar = ({ toggle, setToggle }) => {
 
-  const toggleNav = () => {
-    setToggle(!toggle);
+  const toggleNavTrue = () => {
+    setToggle(true);
   }
 
   return (
     <div className="search-bar">
-      <div className="toggler" onClick={toggleNav} > <i className={toggle ? "left fa fa-bars" : "fa fa-bars"}></i> </div>
+    <div className="form-flex">
+      <div className={toggle ? "hide toggler" : "toggler"} onClick={toggleNavTrue} > <i className="fa fa-bars"></i> </div>
       <form className="search-form">
         <i className="fa fa-search"></i>
         <input type="text" placeHolder="Find Something..." id="img-search" className="search-input" />
         <input type="submit" value="Search" id="img-search-btn" className="search-btn" />
       </form>
+      </div>
+      <div className="search-bar-right">
       <a href="#" className="notification"> 
         <div>
           <i className="fa fa-bell"></i> 
@@ -48,6 +51,7 @@ const SearchBar = ({ toggle, setToggle }) => {
         </span>
         <span className="profile-name">Abigail <i className="fa fa-chevron-down"></i></span>
       </a>
+      </div>
     </div>
   )
 }

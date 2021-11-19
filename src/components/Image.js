@@ -2,7 +2,6 @@ import React from 'react'
 
 
 const Image = ({ newImage, userName, location }) => {
-	console.log(newImage)
   return (
     <a href="#" className="user">
         <div className="progress-bar">

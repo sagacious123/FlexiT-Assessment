@@ -4,7 +4,7 @@ import SearchBar from './SearchBar'
 import TopNav from './TopNav'
 import ImageGrid from './ImageGrid'
 
-const Main = ({ toggle, setToggle, inputValue, setInputValue, newImages, loading }) => {
+const Main = ({ toggle, setToggle, inputValue, setInputValue, newImages }) => {
 
   const closeNav = () => {
     if(toggle) {
@@ -24,7 +24,6 @@ const Main = ({ toggle, setToggle, inputValue, setInputValue, newImages, loading
         <TopNav />
         <ImageGrid 
           newImages={newImages}
-          loading={loading}
         />
       </div>
     </main>

@@ -2,9 +2,7 @@ import React, { useState } from 'react'
 import Image from './Image'
 import '../index.css';
 
-const ImageGrid = ({ newImages, loading }) => {
-  // const [loading, setLoading] = useState(false);
-console.log(loading)
+const ImageGrid = ({ newImages }) => {
 
   return (
     <section className="img-section">

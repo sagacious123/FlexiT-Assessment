@@ -4,16 +4,20 @@ import SearchBar from './SearchBar'
 import TopNav from './TopNav'
 import ImageGrid from './ImageGrid'
 
-const Main = ({ toggle, setToggle }) => {
+const Main = ({ toggle, setToggle, inputValue, setInputValue, newImages }) => {
   return (
     <main className="main">
       <div className="container">
         <SearchBar 
           toggle={toggle} 
           setToggle={setToggle}
+          inputValue={inputValue}
+          setInputValue={setInputValue}
         />
         <TopNav />
-        <ImageGrid />
+        <ImageGrid 
+          newImages={newImages}
+        />
       </div>
     </main>
   )

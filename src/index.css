@@ -19,7 +19,7 @@ body {
   width: 20%;
   height: 100%;
   padding: 30px 30px 30px 0;
-  border-right: 1px solid #cccccc4a;
+  /*border-right: 1px solid #cccccc4a;*/
 }
 .logo-container {
   margin: 14px 0 30px;
@@ -32,6 +32,8 @@ body {
 }
 .side-nav-group h3 {
   padding: 0 20px;
+  font-size: 14px;
+  color: #636363;
 }
 .side-nav-item a {
   display: block;
@@ -43,11 +45,14 @@ body {
   transition: .4s ease;
 }
 .side-nav-item .fa {
-  margin-right: 12px;
+  margin-right: 25px;
+  display: inline-block;
+  height: 4px;
+  width: 4px;
 }
-.fa-male {
+/*.fa-male {
   margin-right: 1.4rem;
-}
+}*/
 .fa-users {
   font-size: 12px;
 }
@@ -56,7 +61,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  border: 1px solid #cccccc4a;
+  border: 1px solid #cccccc6a;
   left: 0;
   top: 0;
   border-radius: 8px;
@@ -76,6 +81,7 @@ body {
 }
 .main {
   width: 80%;
+  border-left: 1px solid #cccccc4a;
 }
 .main .container {
   padding: 30px 0 20px 30px;
@@ -326,6 +332,7 @@ body {
 .img-section .user {
   display: block;
   width: calc((100% / 5) - 1rem);
+  height: 220px;
   position: relative;
   border-radius: 8px;
   overflow: hidden;
@@ -334,6 +341,7 @@ body {
   width: 100%;
   height: 100%;
   vertical-align: middle;
+  object-fit: cover;
 }
 .user-info {
   position: absolute;
@@ -371,7 +379,7 @@ body {
 }
 .user-info-hover button {
   width: 50%;
-  padding: 8px 0;
+  padding: 5px 0;
   border-radius: 4px;
   color: white;
   font-size: 10px;
@@ -386,22 +394,49 @@ body {
   background-color: #2700c1;
   border: 1px solid #2700c1;
 }
+.progress-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 8px;
+}
+.progress-bar span {
+  width: calc((100% / 4) - 3px);
+  height: 100%;
+  background-color: #cccccc6a;
+  border-radius: 5px;
+}
+.progress-bar .active {
+  background-color: #ffffffa6;
+}
+.fa-map-marker {
+  margin-right: 4px;
+}
 .hide {
     display: none;
   }
 
 @media (max-width: 1100px) {
   .side-nav {
-    display: none;
+    /*display: none;*/
+    left: -100%;
     position: fixed;
     z-index: 8;
     background-color: white;
     width: 40%;
-    left:0;
-    padding-left: 20px;
+    /*left:0;*/
+    padding-left: 40px;
+    box-shadow: 1px 1px 8px #8080802b;
+    transition: .4s ease;
   }
   .main {
     width: 100%;
+    border-left: none;
   }
   .main .container {
     padding: 30px 0 20px 0px;
@@ -415,8 +450,11 @@ body {
     display: block;
     font-size: 22px;
   }
+  .nav-show {
+    left: 0%;
+  }
   .show {
-    display: block
+    display: block;
   }
   .hide {
     opacity: 0;

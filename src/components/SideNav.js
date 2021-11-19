@@ -9,7 +9,7 @@ const SideNav = ({ toggle, setToggle }) => {
   }
 
   return (
-    <nav className={toggle ? "side-nav show" : "side-nav"}>
+    <nav className={toggle ? "side-nav nav-show" : "side-nav"}>
       <div className="nav-container">
         <div className="logo-container">
           <a href="#"><i className="fa fa-cube"></i> bluecube</a>

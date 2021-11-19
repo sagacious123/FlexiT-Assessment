@@ -2,7 +2,7 @@ import React from 'react'
 import Notification from './Notification'
 import '../index.css';
 
-const SearchBar = ({ toggle, setToggle }) => {
+const SearchBar = ({ toggle, setToggle,inputValue, setInputValue }) => {
 
   const toggleNavTrue = () => {
     setToggle(true);
@@ -14,7 +14,7 @@ const SearchBar = ({ toggle, setToggle }) => {
       <div className={toggle ? "hide toggler" : "toggler"} onClick={toggleNavTrue} > <i className="fa fa-bars"></i> </div>
       <form className="search-form">
         <i className="fa fa-search"></i>
-        <input type="text" placeHolder="Find Something..." id="img-search" className="search-input" />
+        <input type="text" value={inputValue} onChange={(e) => setInputValue(e.target.value)} placeHolder="Find Something..." id="img-search" className="search-input" />
         <input type="submit" value="Search" id="img-search-btn" className="search-btn" />
       </form>
       </div>

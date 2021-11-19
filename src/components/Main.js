@@ -5,8 +5,15 @@ import TopNav from './TopNav'
 import ImageGrid from './ImageGrid'
 
 const Main = ({ toggle, setToggle, inputValue, setInputValue, newImages, loading }) => {
+
+  const closeNav = () => {
+    if(toggle) {
+      setToggle(false)
+    }
+  }
+
   return (
-    <main className="main">
+    <main onClick={closeNav} className="main">
       <div className="container">
         <SearchBar 
           toggle={toggle} 
